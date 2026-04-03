@@ -1,41 +1,35 @@
 # Define Per
 
-The **Define Per** interactive helps students understand the meaning of "per" in everyday contexts, such as miles per hour or cups per cookie. By exploring different examples, students can connect ratios and unit rates to real-world situations.
+Vite + React application teaching unit-rate language (“per”). [Standards.md](Standards.md) covers Common Core mapping and CK-12 placement.
 
----
+**Live:** https://content-interactives.github.io/per
 
-## 🔗 Live Interactive
+## Requirements
 
-Try it out here:  
-👉 [https://content-interactives.github.io/per](https://content-interactives.github.io/per)
+- Node.js 18+  
+- npm
 
----
+## Commands
 
-## 🌐 Where This Interactive Is Being Used
+| Command | Description |
+|---------|-------------|
+| `npm install` | Dependencies |
+| `npm run dev` | Vite dev server |
+| `npm run build` | Production `dist/` |
+| `npm run preview` | Preview `dist/` |
+| `npm run lint` | ESLint |
+| `npm run deploy` | Build + gh-pages to `dist/` |
 
-This interactive is currently featured in the following locations:
+## Vite
 
-- <img width="20" height="20" alt="image" src="https://github.com/user-attachments/assets/5d12571f-8e12-4441-98ab-c0bc94069a96" /> **CK-12 Intent Response**  
-  - 👉 PRODUCTION: PENDING  
-  - 👉 MASTER: PENDING  
-- 📘 **CK-12 Flexbooks**
-  - 👉 PENDING
+`vite.config.js` sets `base: '/per/'` for GitHub Pages under the `/per/` path.
 
----
+## Stack
 
-## 📚 Standards & Subjects
+React 18, Vite 5, Tailwind CSS 3, ESLint.
 
-This interactive aligns with the following topics and standards:
+## Layout
 
-- **📂 Subject Area**: Middle School Math (Grade 6)  
-- **🧮 Topic**: Ratios & Unit Rates  
-- **📏 Common Core**:  
-  - 6.RP.A.1 – Understand the concept of a ratio and use ratio language to describe a ratio relationship between two quantities.  
-  - 6.RP.A.2 – Understand the concept of a unit rate *a/b* associated with a ratio *a:b* with *b ≠ 0*.
-
----
-
-## 🛠️ Developer Notes
-
-- Built with: React, HTML, CSS, JavaScript  
-- Deployed via GitHub Pages
+- `src/` — components and styles  
+- `public/` — static files  
+- `index.html` — Vite entry
